@@ -6,9 +6,12 @@ export default function Pokemon({ pokemon }: { pokemon: any }) {
     <li key={pokemon.name} className="col-span-1 flex flex-col text-center bg-white rounded-lg shadow divide-y divide-gray-200">
       <div className="flex-1 flex flex-col p-8">
         <PokemonThumbnail pokemon={pokemon} />
-        <h3 className="mt-6 text-gray-900 text-sm font-medium capitalize">
+        <a
+          href={`/pokemon/${pokemon.name}`}
+          className="mt-6 text-gray-900 text-sm font-medium capitalize" target="_blank"
+        >
           {pokemon.name}
-        </h3>
+        </a>
         <dl className="mt-1 flex-grow flex flex-col justify-between">
           <dt className="sr-only">Types</dt>
           <dd className="mt-3 flex gap-2 justify-center">
