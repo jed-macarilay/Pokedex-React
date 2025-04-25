@@ -1,4 +1,4 @@
-import type { Route } from "./+types/pokedex";
+import type { Route } from "./+types/pokedex"
 import Main from "../pages/pokedex/main"
 
 export function meta({}: Route.MetaArgs) {
